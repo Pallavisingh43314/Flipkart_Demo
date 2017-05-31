@@ -1,0 +1,30 @@
+Installation/ Changes:
+
+Install JDK and eclipse
+Import Selenium, Maven and TESTNG jar files.
+FlipkartHomePage is the driver class
+Change the path of the Gecko driver and chrome driver (path = where the respective exe files are installed into the system)
+
+To Run:
+
+Testng.xml -> Run As -> TestNG suite
+
+Roles:
+
+LoginPage.java : code for login into Flipkart. 
+ElectronicMobile.java: whole logic resides there. Filtering the Mobile section and adding the
+					final to the cart.
+FlipkartHomePage.java: Driver page. Responsible for Calling Login.java and ElectronicMobile.java.
+Configuration/Config.property : It has username and password. You can pass the parametes to the program from this file.
+Data/ConfigurationClass.java: Responsible for reading data from Config.property and passing it to the program
+
+Challenges Faced:
+
+the locator issues in Flipkart site. The Web elements dont have ID, Name or any unique tags.
+I have to use xpath for identifying the elements (which is not a good way of programming) and the xpaths
+are unstable too.
+
+
+
+
+
